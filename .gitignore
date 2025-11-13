@@ -1,0 +1,107 @@
+############################
+### PYTHON / FLASK
+############################
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+ENV/
+env/
+
+# Python package files
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Python logs
+*.log
+
+# Flask instance folder
+instance/
+
+# SQLite (if used)
+*.sqlite3
+
+############################
+### NODE / REACT FRONTEND
+############################
+
+# Node modules
+provenance-frontend/node_modules/
+
+# Build output
+provenance-frontend/build/
+provenance-frontend/dist/
+
+# Env files
+provenance-frontend/.env
+provenance-frontend/.env.local
+.env
+.env.local
+
+# NPM logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+############################
+### HARDHAT / BLOCKCHAIN
+############################
+
+# Hardhat Artifacts & Cache
+blockchain/artifacts/
+blockchain/cache/
+blockchain/typechain/
+blockchain/coverage/
+blockchain/coverage.json
+blockchain/ignition/deployments/
+
+# Node modules inside blockchain
+blockchain/node_modules/
+
+############################
+### MACOS
+############################
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon file used on macOS
+Icon?
+._*
+
+############################
+### EDITOR / IDE
+############################
+
+# VS Code
+.vscode/
+.history/
+
+# JetBrains
+.idea/
+
+############################
+### GENERAL
+############################
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# Hidden system folders
+Thumbs.db

@@ -1,0 +1,39 @@
+# In terminal 1
+
+1. cd Data_Provenance_System/blockchain
+2. npx hardhat node 
+
+# In terminal 2
+
+1. cd Data_Provenance_System/blockchain
+2. npx hardhat compile   
+3. npx hardhat run scripts/deploy.js --network localhost
+4. Change the contract address in config.js and app.py with the new one
+
+# In terminal 3
+
+1. brew services start postgresql 
+2. psql -d provenance_db -U provenance_user
+3. \q -> to exit 
+4. curl -X DELETE http://127.0.0.1:5000/reset_db -> to reset databse
+
+# In vs-code terminal 1
+
+1. python3 app.py
+
+# In vs-code terminal 2
+
+1. cd provenance-frontend
+2. npm start
+
+
+
+# Tampering check
+
+* Using flask function
+curl -X PUT http://127.0.0.1:5000/tamper/{id}
+
+* Using Manual Tamper via PostgreSQL Command Line
+psql -U postgres -d your_database_name
+SELECT id, data FROM record;
+UPDATE record SET data = 'Hacked Data 123' WHERE id = 3;
